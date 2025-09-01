@@ -652,6 +652,16 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
   }
 }
 
+.responsive-img{
+  content: url('../img/nologobg22.png');
+}
+
+@media (max-width: 767px) {
+  .responsive-img{
+    content: url('../img/nologobg-m2.png');
+  }
+}
+
 .nav {
   position: relative;
   display: flex;
@@ -883,6 +893,11 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-mt-64 {
   margin-top: -16rem;
 }
@@ -971,6 +986,10 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1053,10 +1072,6 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-8 {
@@ -1181,6 +1196,18 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
@@ -1500,16 +1527,8 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
     width: 18rem;
   }
 
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .xl\:text-2xl {
@@ -1538,10 +1557,6 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
@@ -1595,6 +1610,10 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
 
   .sm\:w-80 {
     width: 20rem;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
   }
 
   .sm\:px-6 {
