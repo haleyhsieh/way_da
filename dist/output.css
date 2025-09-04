@@ -1638,6 +1638,11 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
   content: var(--tw-content);
 }
 
+.hover\:border-blue-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-orange-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(249 115 22 / var(--tw-border-opacity, 1));
